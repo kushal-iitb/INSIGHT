@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Flexbox Tutorial</title>
+    <style>
+        
+        .container{
+            height: 100%;
+            width: 100%;
+            border: 2px solid #E3D8D6;
+            background-color: #E3D8D6;
+            display: flex;
+        }
+        .item{
+            width: auto;
+            height: auto;
+            /* border: 2px solid green; */
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            width: 50%;
+            margin-left: 15%;
+
+        }
+        #item-2{
+            margin-left: 20%;
+            width: 30%;
+        }
+        .bottom{
+            font-size: 10px;
+        }
+        .footer img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 125px;
+            width: 200px;
+
+        }
+            
+        .footer p{
+           text-align:center;
+        }
+        @media only screen and (max-width: 990px) {
+  #item-1 {
+   margin-left: 0%;
+   margin-right: 0rem;
+  }
+}
+        @media only screen and (max-width: 800px) {
+            .container{
+            height: 100%;
+            width: 100%;
+            border: 2px solid #E3D8D6;
+            background-color: #E3D8D6;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #item-1{
+            width: 100%;
+            /* margin-left: 15%; */
+
+        }
+  }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">STEGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Y Combinator News
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/index.html#ycomb">Y Combinator News</a>
+                        <a class="dropdown-item" href="/index.html#enterpreneual">Enterpreneurial world</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/insight.iitbombay">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="item" id="item-1">
+            <h3>How to Start a Biotech Company on a Budget</h3>
+            <p>By Reshma Khilnani <br>January 20, 2021 <br>
+                Running a biotech company is capital intensive, and this can make it intimidating to get started. Founders sometimes face a chicken and egg problem: how do you make progress without millions of dollars in funding, and how do you raise millions of dollars in funding without having made progress?
+                <br>However, it is quite possible today to start a biotech company on a shoestring budget ($0-$200k starting costs). Many successful biotech companies started in just this way.
+                <br>This post walks through three such stories, covering three biotech companies that are doing extremely well. Each example explains how they managed to get started and hit initial milestones with minimal funding or without any funding at all.
+                <br>Specifically, these case studies will demonstrate answers to the following questions:
+                <ol>
+                    <li> Can you run initial experiments showing technical feasibility of your idea, like GeneWEAVE?</li>
+                    <li>If your target market will be very expensive to enter, can you repurpose your product to go after a smaller, more tractable market initially, like BillionToOne?</li>
+                    <li> Can you generate revenue upfront by providing services to other companies that are enabled by your technology, like Arpeggio?</li>
+                </ol>
+                <strong>GeneWEAVE</strong><br>
+                Today GeneWEAVE is a division of Roche, the world’s largest biotech company and leading provider of in vitro diagnostics. GeneWEAVE’s infectious disease diagnostic products are authorized by the FDA and based on technology that was acquired by Roche in 2015 for $425M. They have a unique diagnostic approach: while most use PCR based techniques to diagnose bacterial infections, GeneWEAVE uses phages (viruses that infect bacteria) as the detection mechanism. The main advantage of this approach is faster, easier and cheaper sample preparation that enables rapid results.
+                <br><strong>The founding of GeneWEAVE, however, is a case study on focus and scrappiness.</strong> Diego Rey, co-founder and CTO of GeneWEAVE needed to show that his phage based diagnostics could work. Intensely focused on demonstrating technical feasibility, he and his co-founders found $75K in grant money and hired a postdoc at Cornell to do the first proof-of-principle study. The study needed to demonstrate that the phage-based bacterial detection technique could work. The initial data took a year to collect, and the results were good. However, this initial data used a lab strain of bacteria and the team had yet to show that the technology could work with bacteria recovered from actual infections — or in their case, drug resistant staph (MRSA).
+                <br><strong>At this point, GeneWEAVE set up a chain of experiments, and used each experiment to raise another small round of funding.</strong>Their first investor check was for $150K and they used this to generate more data and convince another investor to also invest $150K. This led to the next experiment which got them another $300K and a final proof point that landed them another $300K. By now the team showed that the tech could work with bacteria found in the real world and directly from patient specimens. This was enough to convince Series A investors to fund the company with $12M.
+                <br>What’s notable about GeneWEAVE is not only what they did, but what they did not do. They focused on their proof of principle, and were not distracted by setting up a facility or starting their FDA 510(k). They defined a first specific product (MRSA screening) and focused on producing key data that de-risked the technology and product one step at a time.
+                <br><strong>BillionToOne (YC S17)</strong><br>
+                BillionToOne makes diagnostic blood tests. They have raised over $30M and are working on a product to detect cancer using a blood test.
+                <br>The BillionToOne blood test works using cell free DNA —that is the DNA that is released into the bloodstream when cells die. Cancer cells have detectable mutations that shed into the bloodstream when the cells die. Theoretically, it would be possible to detect those mutations early via blood draw to determine the correct, personalized treatment for every cancer patient.
+                <br>When getting started, BillionToOne decided not to pursue cancer diagnostics as their first product. Instead, they used their core cell free DNA technology for non-invasive prenatal screening (i.e. determining disease in a fetus from a maternal blood sample), a market much easier to enter due to existing reimbursement rules. Similar to cancer cells, placental cells die and release fetal DNA into the mom’s bloodstream. The technology that would look for cancer mutations instead would look for chromosomal abnormalities, as well as other disorders such as sickle cell anemia, cystic fibrosis, and spinal muscular atrophy mutations in the prenatal use case.
+                <br>Co-founder and CEO Oguzhan Atay and team joined YC in summer 2017 focused on building a prenatal test. Their prenatal focus was one of the key elements to launching on a budget because prenatal testing can be recommended by doctors and billed to insurance. Though cell free DNA technology can be used to diagnose cancer, the incentives are not yet aligned for a product of this type. For example, there isn’t a CPT code to bill against for a “cancer blood test” for early detection or treatment monitoring, or an agreed upon criteria for testing patients with symptoms for an early diagnosis. Today, cancer screening is intriguing, but a company would have to raise a ton of money to prove diagnostic capability at the level needed to get reimbursed.
+                <br>By focusing on prenatal diagnosis, a category with established care patterns and reimbursable by insurance, they could develop their technology and <strong>get paid in a year instead of a decade</strong> . To ship their first version, BillionToOne recruited physicians and scientists who were interested in sickle cell prenatal diagnosis, and worked with those physicians to run a clinical study to develop their laboratory developed test (LDT). Because those scientists were excited about the promise of the product, they were willing to do the study on a budget, and all-in-all BillionToOne was able to develop their product and complete their clinical studies for around $2M before raising their $15M Series A to set up their CLIA laboratory and commercialize their test.
+                <br>The speed and savvy of the team was one of the factors that helped them raise their Series A in 2019.
+                <br>There are many lessons in this early life of BillionToOne that is useful for those starting a bio company on a budget:
+                <ul>
+                    <li>Finding an initial product that’s reimbursable and then taking the shortest path to get there.</li>
+                    <li>Thinking carefully about your regulatory strategy; in this case pursuing CLIA/CAP first before FDA 510(k) clearance.</li>
+                    <li>Identifying and exciting researchers and physicians who are passionate about a disease (in this case sickle cell disease), and working with them to get a study done in a timely and cost effective way.</li>
+                </ul>
+                <strong>Arpeggio Bio (YC S19)</strong><br>
+                Arpeggio Bio is a therapeutics company that is developing cancer treatments. They are designing oncology drugs that activate specific drug targets — increasing effectiveness and reducing side effects for a drug regimen. Their client list includes some of the biggest pharma companies, including Novartis.
+                <br><strong>The early story of Arpeggio is unique in that it was a bootstrapped biotech company.</strong> In the beginning, founder Joey Azofeifa was a PhD student who had a few years of pharma work under his belt. He built a platform (hardware, reagents and software) that gave pharma companies the ability to see what targets their drug compound hits and which ones it doesn’t. Before, pharma companies would spend years and lots of money determining that 10% of patients don’t respond to a treatment; with Arppeggio’s tool, they could determine the response to treatments before human testing.
+                <br>Arpeggio’s first customer was one of Joey’s former colleagues. The initial contract wasn’t for technology, but rather a fee-for-service contract where Arpeggio was shipped drug compounds, and in the lab they profiled the compound and the changes it induced in 21k genes using their own tool. From there, the Arpeggio team cold messaged on LinkedIn and asked former colleagues for intros. Through this strategy, they reach close to $1M annual run rate, completely bootstrapped, before applying to YC in 2019.
+                <br>Arpeggio used their own technology to do drug discovery, and sold it as “consulting” to build credibility with investors and trust with a few initial clients.
+                <br><strong>In conclusion</strong><br>
+                Contrary to popular belief, it’s possible to start a bio company on a budget. We hope that a few illustrations will encourage more founders to take their first steps.
+
+            </p>
+
+        </div>
+        <div class="item" id="item-2">Other Posts
+            <hr><a href="/page1.html"> The Pre-Product Startup and the FD</a>
+            <p class="bottom">
+                posted on 03 Mar 2021
+            </p>
+            <hr><a href="/page2.html">YC Build Sprint Winter 2021</a>
+            <p class="bottom">
+                posted on 02 Feb 2021
+            </p>
+            <hr><a href="/page3.html">How to Start a Biotech Company on a Budget</a>
+            <p class="bottom">
+                posted on 20 Jan 2021
+            </p>
+            <hr><a href="/page4.html">Building for the future</a>
+            <p class="bottom">
+                posted on 09 Dec 2021
+            </p>
+            <hr><a href="/page5.html">Netflix’s Co-Founder Has 5 Pieces of Advice For Aspiring Entrepreneurs</a>
+            <p class="bottom">
+                posted on 11 Sep 2020
+            </p>
+            <hr><a href="/page6.html">Don’t become an entrepreneur</a>
+            <p class="bottom">
+                posted on 13 july 2020
+            </p>
+            <hr><a href="/page7.html">REFRAMING THE NARRATIVE ON ENTREPRENEURSHIP</a>
+            <p class="bottom">
+                posted 5 years ago
+            </p>
+            <hr><a href="/page8.html">Good and Bad Reasons to Become an Entrepreneur</a>
+            <p class="bottom">
+                posted on 14 Aug 2013
+            </p>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <img src="logo.png" alt="logo">
+        <p>© STEGO 2021-2022</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+</html>

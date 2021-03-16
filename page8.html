@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Flexbox Tutorial</title>
+    <style>
+        
+        .container{
+            height: 100%;
+            width: 100%;
+            border: 2px solid #E3D8D6;
+            background-color: #E3D8D6;
+            display: flex;
+        }
+        .item{
+            width: auto;
+            height: auto;
+            /* border: 2px solid green; */
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            width: 50%;
+            margin-left: 15%;
+
+        }
+        #item-2{
+            margin-left: 20%;
+            width: 30%;
+        }
+        .bottom{
+            font-size: 10px;
+        }
+        .footer img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 125px;
+            width: 200px;
+
+        }
+            
+        .footer p{
+           text-align:center;
+        }
+        @media only screen and (max-width: 990px) {
+  #item-1 {
+   margin-left: 0%;
+   margin-right: 0rem;
+  }
+}
+        @media only screen and (max-width: 800px) {
+            .container{
+            height: 100%;
+            width: 100%;
+            border: 2px solid #E3D8D6;
+            background-color: #E3D8D6;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #item-1{
+            width: 100%;
+            /* margin-left: 15%; */
+
+        }
+  }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">STEGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Y Combinator News
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/index.html#ycomb">Y Combinator News</a>
+                        <a class="dropdown-item" href="/index.html#enterpreneual">Enterpreneurial world</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/insight.iitbombay">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="item" id="item-1">
+            <h3>Good and Bad Reasons to Become an Entrepreneur</h3>
+            <p>By GARY VAYNERCHUKt <br> 5 years ago <br>
+                <div class="garry">
+                    <img src="/garry.jpg" alt="" style="height: 300px; width: 300px;">
+                </div>
+
+                <br> Being an entrepreneur is hard. Period. <br>
+                <br>Just because Zucks put on a hoodie and became a billionaire doesn’t mean everyone else can. Sure, if you’ve got the chops, there’s no question that this day and age has provided us the tools to build something both quickly and cost-effectively. But, that doesn’t mean everybody should do it. It’s funny to me how quickly people can realize that they’re not a Kobe or Beyonce, but for some reason, they’re able to convince themselves they’re an entrepreneur and can build a million-dollar business.
+                <br>For over the last half-decade, we’ve been living through a narrative that has glorified entrepreneurship. The story that’s been depicted in movies like The Social Network has convinced people that they could (and should) go and start a business. But, by doing this, I’m afraid that a lot of you aren’t putting yourselves in the best positions to succeed. Not only might you be wasting time, but you’re also hurting your reputation and brand equity while losing people’s money along the way. Instead of progressing yourselves professionally, what you’re actually doing is stunting your growth in a time where you could have been an incredible number two, three, or four in a great organization and setting yourself up for more long-term upside.
+                <br>Look at the facts. LinkedIn, YouTube, Facebook, Twitter, Instagram, Snapchat, Tumblr — Recognize those names? That’s 7 (7!!!) notable companies built in a 12-year window that everyone’s convinced they can mimic. In the time that it takes you to read this article, 27 more companies were started and almost all will fail. That’s a problem. Why does everyone think they can start the next big thing when it’s statistically improbable they’ll create the next unicorn? Look at the math. It’s against you.
+                <br>And, to even be “successful” you don’t need the “millions.” Because when you really look at the numbers, on average, an income of $155,000 a year puts you in the top 10% of all income earners in the U.S. That’s likely lower than what you would have thought, right? Well, that’s the data. That’s the truth. So this notion of “I need to make a ‘billi’ or bust,” is just impractical.
+                <br>And so, for those of you looking to start your own venture, you need to start by asking yourself, “Why am I even going down this route in the first place?” The answer is happiness, because that’s the truth. Would you rather make $70K running your own thing, dictating your own income, happy as hell, or make $100K at a job you hate?
+                <br>And so, all I’m asking here is that we reframe the conversation. Because, the only way for any of this to work is for you to start with your north star and reverse engineer from there given the context of who you are and what you want out of this one shot we’ve all got.
+                <br>In entrepreneurship, there’s no magic formulas. No 9-week process to make you a millionaire. No secret-holding $3,000 ebook that was written by someone who’s never built a business besides the one that “teaches” you how to build one. That shit’s not real. It takes work. Hard work. And those “millions” we see see in the headlines? They’re not realistic either. They’re just not. But that doesn’t mean we can’t be happy while doing it. We just need to understand why we’re doing the things we’re doing, because:
+                <br><strong style="text-align: center;">How you make your money is way more important than how much you make.</strong>
+                <br>We live in a day and time where anyone with passion and love for something can build a business around it. And, although that might sound cliché because the thought has been bastardized, it’s just true. The internet has opened us all to a world of opportunity but we need to be honest with ourselves in understanding what we’re seeking. You just need to be practical and self-aware. Because 30, 40, 60 years from now, you’re not going to regret the few extra bucks you could have made. You’re going to regret not focusing your time and energy around the things that could have made you happy.
+
+            </p>
+
+        </div>
+        <div class="item" id="item-2">Other Posts
+            <hr><a href="/page1.html"> The Pre-Product Startup and the FD</a>
+            <p class="bottom">
+                posted on 03 Mar 2021
+            </p>
+            <hr><a href="/page2.html">YC Build Sprint Winter 2021</a>
+            <p class="bottom">
+                posted on 02 Feb 2021
+            </p>
+            <hr><a href="/page3.html">How to Start a Biotech Company on a Budget</a>
+            <p class="bottom">
+                posted on 20 Jan 2021
+            </p>
+            <hr><a href="/page4.html">Building for the future</a>
+            <p class="bottom">
+                posted on 09 Dec 2021
+            </p>
+            <hr><a href="/page5.html">Netflix’s Co-Founder Has 5 Pieces of Advice For Aspiring Entrepreneurs</a>
+            <p class="bottom">
+                posted on 11 Sep 2020
+            </p>
+            <hr><a href="/page6.html">Don’t become an entrepreneur</a>
+            <p class="bottom">
+                posted on 13 july 2020
+            </p>
+            <hr><a href="/page7.html">REFRAMING THE NARRATIVE ON ENTREPRENEURSHIP</a>
+            <p class="bottom">
+                posted 5 years ago
+            </p>
+            <hr><a href="/page8.html">Good and Bad Reasons to Become an Entrepreneur</a>
+            <p class="bottom">
+                posted on 14 Aug 2013
+            </p>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <img src="logo.png" alt="logo">
+        <p>© STEGO 2021-2022</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+</html>
